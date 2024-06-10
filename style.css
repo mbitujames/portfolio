@@ -80,6 +80,11 @@ nav .navlinks li{
 nav .navlinks li a{
      color:#e5e5e5;
      margin-right: 2.5rem;
+     font-weight: bold;
+}
+nav .navlinks li a:hover{
+    color: #007ced;
+    text-decoration: underline;
 }
 .container {
     display: flex;
@@ -172,47 +177,103 @@ nav .navlinks li a{
     margin: 0 auto;
 }
 
-/*css for resume*/
-.resume-section {
-    margin-bottom: 40px;
+/* Resume Section Styles */
+.section#resume {
+    background-color: #222; /* Light background for better readability */
+    color: white; /* Dark text for contrast */
+    padding: 60px 0;
 }
-.resume-section h3 {
-    font-size: 2rem;
-    color: #007ced;
-    margin-bottom: 20px;
-    text-align: center;
+
+.section#resume .resume-section {
+    margin: 40px 0; /* Add some spacing for better separation */
+    border-left: 5px solid #007ced; /* Decorative border on the left */
+    padding-left: 40px; /* Add padding for content within the section */
 }
-.resume-item {
-    margin-bottom: 30px;
-}
-.resume-item h4 {
+
+.section#resume h3 {
     font-size: 1.5rem;
-    color: #e5e5e5;
-}
-.resume-item h5 {
-    font-size: 1.2rem;
+    font-weight: bold; /* Make headings bold for emphasis */
+    margin-bottom: 20px;
     color: #007ced;
-    margin: 5px 0;
+    text-transform: uppercase; /* Convert headings to uppercase for a modern look */
+    position: relative; /* Enable positioning for the timeline indicator */
 }
-.resume-item span {
-    display: block;
-    font-size: 1rem;
-    color: #aaa;
-    margin-bottom: 10px;
+
+.section#resume h3::after {
+    content: "";
+    display: block; /* Create an invisible element after the heading */
+    width: 10px;
+    height: 10px;
+    border-radius: 50%; /* Create a circular timeline indicator */
+    background-color: #007ced; /* Match the border color */
+    position: absolute; /* Position the indicator at the left of the heading */
+    top: 50%; /* Align the indicator vertically */
+    transform: translateY(-50%); /* Center the indicator vertically */
+    left: -15px; /* Position the indicator slightly to the left of the heading */
 }
-.resume-item p {
-    font-size: 1rem;
-    color: #e5e5e5;
-    margin-bottom: 10px;
+
+.section#resume .experience,
+.section#resume .education {
+    margin-bottom: 40px; /* Add space between each section */
 }
-.resume-item ul {
-    list-style-type: disc;
-    margin-left: 20px;
+
+.section#resume .experience-item,
+.section#resume .education-item {
+    margin-bottom: 40px; /* Add space between each experience/education item */
+    padding-left: 20px; /* Add indentation for content */
+    position: relative; /* Enable positioning for the timeline line */
 }
-.resume-item ul li {
-    font-size: 1rem;
-    color: #e5e5e5;
-    margin-bottom: 5px;
+
+.section#resume .experience-item::before,
+.section#resume .education-item::before {
+    content: "";
+    display: block; /* Create an invisible element before the content */
+    width: 2px; /* Create a thin timeline line */
+    height: 100%; /* Extend the line to the bottom of the item */
+    background-color: white; /* Light gray color for the line */
+    position: absolute; /* Position the line on the left */
+    top: 0; /* Start the line at the top */
+    left: 8px; /* Position the line slightly to the left of the content */
+}
+
+.section#resume .experience-item:first-child::before,
+.section#resume .education-item:first-child::before {
+    /* Remove the timeline line for the first item to avoid unnecessary repetition */
+    display: none;
+}
+
+.section#resume .experience-item h4,
+.section#resume .education-item h4,
+.section#resume .experience-item h5,
+.section#resume .education-item h5,
+.section#resume .experience-item span,
+.section#resume .education-item span {
+    margin-bottom: 15px; /* Add more space between heading elements */
+}
+
+.section#resume .experience-item h4,
+.section#resume .education-item h4 {
+    font-size: 1.2rem;
+    font-weight: bold; /* Emphasize job titles */
+}
+
+.section#resume .experience-item p,
+.section#resume .education-item p {
+    font-size: 0.9rem;
+    line-height: 1.5; /* Maintain readability with line spacing */
+    padding-bottom: 10px;
+}
+
+.section#resume .experience-item ul,
+.section#resume .education-item ul {
+    list-style: none; /* Remove default bullet points */
+    padding-left: 10px; /* Indent list items for clarity */
+    margin: 0; /* Reset default margins */
+}
+
+.section#resume .experience-item ul li,
+.section#resume .education-item ul li {
+    margin-bottom: 30px; /* Add spacing between list items */
 }
 
 /*css for portfolio*/
@@ -236,7 +297,7 @@ nav .navlinks li a{
 }
 .portfolio-item img {
     width: 100%;
-    height: auto;
+    height: 50%;
 }
 .portfolio-info {
     padding: 20px;
@@ -298,6 +359,10 @@ nav .navlinks li a{
     border-radius: 10px;
     overflow: hidden;
     height: 20px;
+
+}
+.skill:hover{
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
 }
 .skill-level {
     height: 100%;
@@ -344,6 +409,7 @@ nav .navlinks li a{
 }
 .contact-form .btn {
     background-color: #007ced;
+    width: 100%;
     color: #fff;
     padding: 10px 20px;
     border-radius: 5px;
@@ -354,7 +420,8 @@ nav .navlinks li a{
     cursor: pointer;
 }
 .contact-form .btn:hover {
-    background-color: #005bb5;
+    background-color: white;
+    color: black;
 }
 .contact-info {
     text-align: center;
@@ -398,7 +465,8 @@ nav .navlinks li a{
 .footer {
     background-color: #222;
     color: #e5e5e5;
-    padding: 20px 0;
+    padding: 10px 0;
+    position: relative;
 }
 .footer .wrapper {
     display: flex;

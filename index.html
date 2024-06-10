@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <!----Font awesome cdn  font icon css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 <body>
      <div class="hero-header">
@@ -40,22 +41,22 @@
                  <div class="hero-text">
                     <h5>Hi I'm <span class="input">Frontend Developer</span></h5>
                     <h1>Mbitu James</h1>
-                    <p><strong>I'm a Software Developer from Kenya<br><br></strong>
+                    <p><strong>A Software Developer from Kenya<br><br></strong>
 
                         🌟 Passionate about creating pixel-perfect, user-friendly interfaces that bring ideas to life. I specialize in turning complex concepts into elegant, responsive web applications.
                         </p>
 
                     <div class="btn-group">
                        <a href="#" class="btn active">Download CV</a>
-                       <a href="#" class="btn active">Contact</a>
+                       <a href="#contact" class="btn active">Contact</a>
                     </div>
 
                     <div class="social">
-                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-github"></i></a>
-                        <a href="#"><i class="fa-brands fa-pintrest"></i></a>
+                        <a href="https://x.com/mbituke?t=mv9XXsRlVtVuec1vDPbUbQ&s=09" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/mbitujames/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/mbitu?igsh=MWs3bG53cHhwYWNpOA=="  target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/mbitujames" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://pin.it/2fseiKYde" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
                     </div>
                  </div>
             </div>
@@ -83,70 +84,86 @@
     </section>
     <section id="resume" class="section">
         <div class="wrapper">
-            <h2>Resume</h2>
-            <div class="resume-section">
-                <h3>Work Experience</h3>
-                <div class="resume-item">
-                    <h4>Frontend Developer</h4>
-                    <h5>XYZ Company, Nairobi, Kenya</h5>
-                    <span>January 2022 - Present</span>
-                    <p>At XYZ Company, I have been responsible for developing and maintaining the front end of various web applications. My role includes:</p>
-                    <ul>
-                        <li>Implementing responsive design using HTML, CSS, and JavaScript.</li>
-                        <li>Building dynamic user interfaces with React.</li>
-                        <li>Collaborating with backend developers to integrate APIs.</li>
-                        <li>Optimizing web pages for speed and scalability.</li>
-                        <li>Conducting code reviews and mentoring junior developers.</li>
-                    </ul>
-                </div>
-                <div class="resume-item">
-                    <h4>Web Developer Intern</h4>
-                    <h5>ABC Technologies, Nairobi, Kenya</h5>
-                    <span>June 2021 - December 2021</span>
-                    <p>As an intern at ABC Technologies, I gained hands-on experience in web development, including:</p>
-                    <ul>
-                        <li>Assisting in the development of client websites.</li>
-                        <li>Debugging and troubleshooting web applications.</li>
-                        <li>Participating in daily stand-up meetings and sprint planning.</li>
-                        <li>Learning and applying best practices in web development.</li>
-                    </ul>
-                </div>
+          <h2>Resume</h2>
+          <div class="resume-container">
+            <div class="experience">
+              <h3>Work Experience</h3>
+              <ul class="experience-list">
+                <li>
+                  <div class="experience-item">
+                    <h4>Logistics Manager</h4>
+                    <h5>Top Guarantees Limited, Kenya</h5>
+                    <span>May 2023 - Present</span>
+                    <p>
+                      Developed and maintained front-end of web applications using HTML, CSS, and JavaScript. Built dynamic user interfaces with React. Collaborated with backend developers to integrate APIs. Optimized web pages for speed and scalability. Conducted code reviews and mentored junior developers.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="experience-item">
+                    <h4>Information Technology Intern</h4>
+                    <h5>National Housing Corporation, Nairobi, Kenya</h5>
+                    <span>May 2022 - August 2022</span>
+                    <p>
+                        As an IT Intern at National Housing Cooperation, I had the opportunity to work on a variety of tasks, gaining practical experience in different aspects of IT operations. Some of the tasks I performed during my internship included: 
+                        1. Troubleshooting and technical support 
+                        2. Cybersecurity awareness 
+                        3. Help-desk management 
+                        4. Hardware and software installation
+                        5. System maintenance and monitoring 
+                    </p>
+                  </div>
+                </li>
+              </ul>
             </div>
-            <div class="resume-section">
-                <h3>Education</h3>
-                <div class="resume-item">
+            <div class="education">
+              <h3>Education</h3>
+              <ul class="education-list">
+                <li>
+                  <div class="education-item">
                     <h4>Bachelor of Science in Computer Science</h4>
-                    <h5>University of Nairobi, Kenya</h5>
-                    <span>2018 - 2022</span>
-                    <p>Graduated with a focus on software development, algorithms, and data structures. Key achievements include:</p>
-                    <ul>
-                        <li>Developed a capstone project on a responsive web application.</li>
-                        <li>Participated in coding competitions and hackathons.</li>
-                        <li>Completed coursework in web development, databases, and software engineering.</li>
-                    </ul>
-                </div>
+                    <h5>Catholic University of Eastern Africa, Kenya</h5>
+                    <span>2019 - 2024</span>
+                    <p>
+                      Graduated with a focus on software development, algorithms, and data structures. Key achievements include: Developed a capstone project on a responsive web application. Participated in coding competitions and hackathons. Completed coursework in web development, databases, and software engineering.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                    <div class="education-item">
+                      <h4>Google Cybersecurity</h4>
+                      <h5>Coursera</h5>
+                      <span>2023 - 2024</span>
+                      <p>
+                        Currently pursuing a certification in Cybersecurity from Google on Coursera. The program covers the foundations of Cybersecurity, Manage Security Risk, Networks and Network Security, Linux and SQL, Assets, Threats and vulnerabilities, detection and response and Automate Cybersecurity Tasks with Python.
+                      </p>
+                    </div>
+                  </li>
+              </ul>
             </div>
+          </div>
         </div>
-    </section>
+      </section>
+      
     <section id="portfolio" class="section">
         <div class="wrapper">
             <h2>Portfolio</h2>
             <p>Below are some examples of my work, demonstrating my skills and experience as a frontend developer.</p>
             <div class="portfolio-grid">
                 <div class="portfolio-item">
-                    <img src="img/project1.jpg" alt="Project 1">
+                    <img src="./img/project1.png" alt="Project 1">
                     <div class="portfolio-info">
-                        <h3>Project Title 1</h3>
-                        <p>A brief description of the project. Tools used: HTML, CSS, JavaScript, React.</p>
+                        <h3>Real Estate Management System</h3>
+                        <p>A Responsive web-based Real Estate System which allows users to search for their desired properties based on different criteria, make payments for the properties and receive notifications where there offers are approved. Tools used: HTML, CSS and JavaScript.</p>
                         <a href="#" class="btn">View Project</a>
                     </div>
                 </div>
                 <div class="portfolio-item">
-                    <img src="img/project2.jpg" alt="Project 2">
+                    <img src="./img/project2.jpg" alt="Project 2">
                     <div class="portfolio-info">
-                        <h3>Project Title 2</h3>
-                        <p>A brief description of the project. Tools used: HTML, CSS, JavaScript, Angular.</p>
-                        <a href="#" class="btn">View Project</a>
+                        <h3>Crypto Websites</h3>
+                        <p>A brief description of the project. Tools used: HTML, CSS, JavaScript.</p>
+                        <a href="https://crypto-websites.vercel.app/" class="btn">View Project</a>
                     </div>
                 </div>
                 <div class="portfolio-item">
@@ -234,11 +251,11 @@
                 <p>Email: <a href="mailto:your-email@example.com">mbitumutonga@gmail.com</a></p>
                 <p>Phone: <a href="tel:+254716519766">+254 716 519 766</a></p>
                 <div class="social">
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
-                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                    <a href="https://x.com/mbituke?t=mv9XXsRlVtVuec1vDPbUbQ&s=09" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/mbitujames/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/mbitu?igsh=MWs3bG53cHhwYWNpOA=="><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/mbitujames" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://pin.it/2fseiKYde" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
                 </div>
             </div>
         </div>
@@ -264,11 +281,11 @@
                 <div class="footer-social">
                     <h3>Follow Me</h3>
                     <div class="social-icons">
-                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-github"></i></a>
-                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                        <a href="https://x.com/mbituke?t=mv9XXsRlVtVuec1vDPbUbQ&s=09" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/mbitujames/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/mbitu?igsh=MWs3bG53cHhwYWNpOA=="><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/mbitujames" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://pin.it/2fseiKYde" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
                     </div>
                 </div>
             </div>
@@ -297,5 +314,35 @@
             loop:true
         })
      </script>
+     <script>
+        document.getElementById('contact-form').addEventListener('submit', (event) => {
+            event.preventDefault(); // Prevent default form submission
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value; // Optional
+            const message = document.getElementById('message').value;
+
+            // Prepare EmailJS template data
+            const templateParams = {
+                name: name,
+                email: email,
+                phone: phone, // Include phone number if provided
+                message: message,
+            };
+            // Replace with your EmailJS service ID and template ID
+            emailjs.send('service_v0cjabb', 'template_igryn7t', templateParams, 'ahLVU5lJnEPIEy_3m')
+            .then((response) => {
+            console.log('SUCCESS!', response.status, response.text);
+            alert('Your message has been sent successfully!');
+            // Clear the form after successful submission (optional)
+            document.getElementById('contact-form').reset();
+            }, (error) => {
+            console.log('FAILED...', error);
+            alert('An error occurred while sending your message. Please try again later.');
+            });
+        });
+     </script>
+        
 </body>
 </html>
