@@ -461,98 +461,35 @@ nav .navlinks li a:hover{
     }
 }
 
-/* Footer Section */
+/* Footer Styles */
 .footer {
-    background-color: #222;
-    color: #e5e5e5;
-    padding: 10px 0;
+    background-color: #222; /* Dark background color */
+    color: white; /* Light text color */
+    padding: 20px 0; /* Vertical padding */
+    text-align: center; /* Center-align text */
     position: relative;
-}
-.footer .wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
     width: 100%;
-    max-width: 1280px;
-}
-.footer-logo {
-    display: flex;
-    align-items: center;
-}
-.footer-logo i {
-    height: 45px;
-    width: 45px;
-    background-color: #007ced;
-    border-radius: 50%;
-    color: #fff;
-    font-size: 1.5rem;
-    padding: 10px;
-    margin-right: 10px;
-}
-.footer-logo .logo-text {
-    font-size: 24px;
-    font-weight: 500;
-}
-.footer-links,
-.footer-social {
-    margin-top: 20px;
-    flex-direction: column;
-}
-.footer-links h3,
-.footer-social h3 {
-    font-size: 18px;
-    margin-bottom: 15px;
-}
-.footer-links ul {
-    list-style: none;
-    padding: 0;
-}
-.footer-links ul li {
-    margin-bottom: 10px;
-}
-.footer-links ul li a {
-    color: #e5e5e5;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-.footer-links ul li a:hover {
-    color: #007ced;
-}
-.footer-social .social-icons a {
-    color: #e5e5e5;
-    margin-right: 10px;
-    font-size: 18px;
-    transition: color 0.3s;
-}
-.footer-social .social-icons a:hover {
-    color: #007ced;
-}
-.footer-bottom {
-    margin-top: 40px;
-}
-.footer-bottom p {
-    margin: 0;
-    font-size: 14px;
 }
 
-/* Responsive design for smaller screens */
-@media (max-width: 768px) {
-    .footer-content {
-        flex-direction: column;
-        align-items: center;
-    }
-    .footer-links,
-    .footer-social {
-        text-align: center;
-    }
+.footer .wrapper {
+    margin: 0 auto; /* Center align the wrapper */
 }
 
+.footer .footer-bottom {
+    border-top: 1px solid #007ced; /* Add a top border for separation */
+    padding-top: 10px; /* Add padding for spacing */
+}
+
+/* Media Queries for Responsive Footer */
+
+@media only screen and (max-width: 768px) {
+  .footer {
+    padding: 15px 10px; /* Reduce padding on smaller screens */
+  }
+  .footer .footer-bottom {
+    font-size: 0.8rem; /* Reduce font size slightly on smaller screens */
+  }
+}
 /* Responsive design & displaying navbar for small screen */
 @media(max-width:930px)
 {
