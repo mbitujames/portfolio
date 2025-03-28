@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexusPort | Mbitu</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="logo">Mbitu</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home">Home</a></li>
+                <li class="nav-item"><a href="#about">About</a></li>
+                <li class="nav-item"><a href="#skills">Skills</a></li>
+                <li class="nav-item"><a href="#projects">Projects</a></li>
+                <li class="nav-item"><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="greeting">Hi, I'm </span>
+                <span class="name">Your Name</span>
+            </h1>
+            <p class="hero-subtitle">
+                <span class="typing-text">Full-Stack Developer</span>
+                <span class="typing-text">Relationship Officer - Trade Finance</span>
+                <span class="typing-text">Gamer</span>
+                <span class="cursor">|</span>
+            </p>
+            <p class="hero-description">
+                Building digital experiences that matter.
+            </p>
+            <a href="#contact" class="cta-button">Let's Connect</a>
+        </div>
+        <div class="social-links">
+            <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/yourusername" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com/yourusername" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://hackerrank.com/yourusername" target="_blank"><i class="fab fa-hackerrank"></i></a>
+        </div>
+    </section>
+    <!-- About Me Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <!-- Profile Image -->
+                <div class="profile-img">
+                    <img src="assets/profile-pic.jpg" alt="Your Name" />
+                    <div class="circle-shape"></div>
+                </div>
+
+                <!-- Bio & Skills -->
+                <div class="bio">
+                    <p class="intro-text">
+                        I'm a <strong>passionate developer</strong> with expertise in <strong>JavaScript, Python, and React</strong>. 
+                        I love solving problems through code and contributing to open-source projects.
+                    </p>
+                    <p class="passion-text">
+                        <i class="fas fa-code"></i> Tech isn’t just my career—it’s my playground. I thrive on 
+                        <strong>clean code, AI innovations, and hackathons!</strong>
+                    </p>
+
+                    <!-- Skill Tags -->
+                    <div class="skills-tags">
+                        <span class="tag">HTML/CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">React</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">Git</span>
+                    </div>
+
+                    <!-- Download CV Button -->
+                    <a href="assets/your-cv.pdf" download class="download-btn">
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-container">
+                <!-- Progress Bars -->
+                <div class="skills-progress">
+                    <h3>Core Proficiencies</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>HTML / CSS</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 95%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>JavaScript</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>React</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Python</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tag Cloud -->
+                <div class="skills-tagcloud">
+                    <h3>Technologies & Tools</h3>
+                    <div class="tagcloud">
+                        <span class="tag">Node.js</span>
+                        <span class="tag">Git</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">MongoDB</span>
+                        <span class="tag">Firebase</span>
+                        <span class="tag">Figma</span>
+                        <span class="tag">AWS</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">SASS</span>
+                        <span class="tag">Redux</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Education & Resume Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education & Resume</h2>
+            
+            <!-- Education Timeline -->
+            <div class="timeline">
+                <!-- Timeline Item 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-date">2020 - 2024</div>
+                    <div class="timeline-content">
+                        <h3>Bachelor of Science in Computer Science</h3>
+                        <p class="institution">University of Tech, Nairobi</p>
+                        <p class="description">
+                            Specialized in Artificial Intelligence and Web Development. 
+                            Graduated with Honors (GPA: 3.8/4.0).
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Timeline Item 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-date">2016 - 2019</div>
+                    <div class="timeline-content">
+                        <h3>Diploma in Software Engineering</h3>
+                        <p class="institution">Kenya Technical Institute</p>
+                        <p class="description">
+                            Focused on full-stack development and database systems. 
+                            Awarded Best Project for a student management system.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resume Download Section -->
+            <div class="resume-download">
+                <h3>Want my full professional background?</h3>
+                <a href="assets/resume.pdf" download class="download-btn">
+                    <i class="fas fa-file-pdf"></i> Download Resume
+                </a>
+                
+                <!-- Optional Certifications Badges -->
+                <div class="certifications">
+                    <p>Certifications:</p>
+                    <div class="badges">
+                        <img src="assets/aws-certified.png" alt="AWS Certified" title="AWS Certified Developer">
+                        <img src="assets/google-it-support.png" alt="Google IT Support" title="Google IT Support Professional">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Interests Section -->
+    <section id="interests" class="interests">
+        <div class="container">
+            <h2 class="section-title">What Excites Me</h2>
+            <p class="section-subtitle">Beyond code, here's what fuels my creativity and curiosity</p>
+            
+            <div class="interest-cards">
+                <!-- Card 1: Web Dev -->
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>
+                        Crafting responsive, user-friendly web experiences with modern frameworks like React and Next.js.
+                    </p>
+                    <div class="tags">
+                        <span>React</span>
+                        <span>CSS Magic</span>
+                        <span>UX/UI</span>
+                    </div>
+                </div>
+                
+                <!-- Card 2: AI & ML -->
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>AI & ML</h3>
+                    <p>
+                        Exploring neural networks, NLP, and computer vision to build intelligent systems.
+                    </p>
+                    <div class="tags">
+                        <span>Python</span>
+                        <span>TensorFlow</span>
+                        <span>Chatbots</span>
+                    </div>
+                </div>
+                
+                <!-- Card 3: Game Dev -->
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Game Development</h3>
+                    <p>
+                        Designing immersive games with Unity and Godot, focusing on mechanics and storytelling.
+                    </p>
+                    <div class="tags">
+                        <span>C#</span>
+                        <span>Unity</span>
+                        <span>3D Modeling</span>
+                    </div>
+                </div>
+                
+                <!-- Card 4: Mobile Apps -->
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Apps</h3>
+                    <p>
+                        Building cross-platform apps with Flutter and React Native for seamless user experiences.
+                    </p>
+                    <div class="tags">
+                        <span>Flutter</span>
+                        <span>Firebase</span>
+                        <span>Swift</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <p class="section-subtitle">Here’s some of my recent work. Click to explore!</p>
+            
+            <!-- Project Filter Buttons -->
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Dev</button>
+                <button class="filter-btn" data-filter="ai">AI/ML</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+            </div>
+            
+            <!-- Project Grid -->
+            <div class="project-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-category="web">
+                    <div class="project-img">
+                        <img src="assets/ecommerce-dashboard.jpg" alt="E-Commerce Dashboard">
+                        <div class="project-links">
+                            <a href="https://github.com/yourusername/ecommerce-demo" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://ecommerce-demo.vercel.app" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>E-Commerce Dashboard</h3>
+                        <p>A React dashboard with real-time sales analytics, built with Firebase.</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Firebase</span>
+                            <span>Chart.js</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card" data-category="ai">
+                    <div class="project-img">
+                        <img src="assets/ai-chatbot.jpg" alt="AI Chatbot">
+                        <div class="project-links">
+                            <a href="https://github.com/yourusername/ai-chatbot" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>AI Customer Support Chatbot</h3>
+                        <p>Python-based NLP chatbot trained to handle FAQs for e-commerce sites.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>NLTK</span>
+                            <span>TensorFlow</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card" data-category="mobile">
+                    <div class="project-img">
+                        <img src="assets/fitness-app.jpg" alt="Fitness App">
+                        <div class="project-links">
+                            <a href="https://github.com/yourusername/fitness-app" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://play.google.com/store/apps/details?id=com.fitness.demo" target="_blank"><i class="fab fa-google-play"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>FitTrack Mobile App</h3>
+                        <p>Flutter app for workout tracking with Firebase backend.</p>
+                        <div class="project-tags">
+                            <span>Flutter</span>
+                            <span>Firebase</span>
+                            <span>Dart</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- View More Button -->
+            <div class="view-more">
+                <a href="https://github.com/yourusername?tab=repositories" target="_blank" class="view-more-btn">
+                    View All Projects <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Have a project in mind? Let’s collaborate!</p>
+            
+            <div class="contact-container">
+                <!-- Contact Form -->
+                <form id="contact-form" class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <div class="form-group">
+                        <input type="text" name="name" id="name" placeholder="Your Name" required>
+                        <label for="name">Name</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="email" name="email" id="email" placeholder="Your Email" required>
+                        <label for="email">Email</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="text" name="subject" id="subject" placeholder="Subject" required>
+                        <label for="subject">Subject</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <textarea name="message" id="message" rows="5" placeholder="Your Message" required></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">
+                        <span class="btn-text">Send Message</span>
+                        <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
+                    </button>
+                    
+                    <div id="form-status" class="form-status"></div>
+                </form>
+                
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h3>Other Ways to Reach Me</h3>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:mbitumutonga@gmail.com">mbitumutonga@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <a href="tel:+254716519766">+254 716 519 766</a>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Nairobi, Kenya</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- New Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">NexusPort</div>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
