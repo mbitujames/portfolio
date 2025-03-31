@@ -149,12 +149,12 @@ filterBtns.forEach(btn => {
     });
 });
 
-// Contact Form Handling
+// Contact Form Handling with EmailJS
 const contactForm = document.getElementById('contact-form');
 const formStatus = document.getElementById('form-status');
 
 if (contactForm) {
-    contactForm.addEventListener('submit', async (e) => {
+    contactForm.addEventListener('submit', function(e) {
         e.preventDefault();
         
         // Change button state
@@ -162,38 +162,29 @@ if (contactForm) {
         submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
         submitBtn.disabled = true;
         
-        try {
-            const response = await fetch(contactForm.action, {
-                method: 'POST',
-                body: new FormData(contactForm),
-                headers: {
-                    'Accept': 'application/json'
-                }
-            });
-            
-            if (response.ok) {
+        // Send email using EmailJS
+        emailjs.sendForm('default_service', 'template_w1fz8ll', contactForm)
+            .then(() => {
                 formStatus.textContent = 'Message sent successfully!';
                 formStatus.className = 'form-status success';
                 contactForm.reset();
-            } else {
-                throw new Error('Form submission failed');
-            }
-        } catch (error) {
-            formStatus.textContent = 'Oops! Something went wrong. Please try again.';
-            formStatus.className = 'form-status error';
-        } finally {
-            submitBtn.innerHTML = '<span class="btn-text">Send Message</span><span class="btn-icon"><i class="fas fa-paper-plane"></i></span>';
-            submitBtn.disabled = false;
-            
-            // Hide status message after 5 seconds
-            setTimeout(() => {
-                formStatus.textContent = '';
-                formStatus.className = 'form-status';
-            }, 5000);
-        }
+            }, (error) => {
+                console.error('FAILED...', error);
+                formStatus.textContent = 'Oops! Something went wrong. Please try again.';
+                formStatus.className = 'form-status error';
+            })
+            .finally(() => {
+                submitBtn.innerHTML = '<span class="btn-text">Send Message</span><span class="btn-icon"><i class="fas fa-paper-plane"></i></span>';
+                submitBtn.disabled = false;
+                
+                // Hide status message after 5 seconds
+                setTimeout(() => {
+                    formStatus.textContent = '';
+                    formStatus.className = 'form-status';
+                }, 5000);
+            });
     });
 }
-
 // Input label animation
 document.querySelectorAll('.form-group input, .form-group textarea').forEach(input => {
     input.addEventListener('focus', () => {

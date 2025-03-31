@@ -397,14 +397,14 @@
             
             <div class="contact-container">
                 <!-- Contact Form -->
-                <form id="contact-form" class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <form id="contact-form" class="contact-form">
                     <div class="form-group">
-                        <input type="text" name="name" id="name" placeholder="Your Name" required>
+                        <input type="text" name="name" id="name" placeholder="Your Name" required autocomplete="on">
                         <label for="name">Name</label>
                     </div>
                     
                     <div class="form-group">
-                        <input type="email" name="email" id="email" placeholder="Your Email" required>
+                        <input type="email" name="email" id="email" placeholder="Your Email" required autocomplete="on">
                         <label for="email">Email</label>
                     </div>
                     
@@ -504,6 +504,11 @@
             <p>&copy; 2025 Mbitu. All Rights Reserved.</p>
         </div>
     </footer>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+    emailjs.init('ahLVU5lJnEPIEy_3m')
+    </script>
 
     <script src="script.js"></script>
 </body>
