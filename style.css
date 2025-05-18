@@ -6,7 +6,145 @@
     --text-muted: #718096;    /* Lighter gray for secondary text */
     --border-color: #E2E8F0;  /* Light border color */
     --white: #FFFFFF;         /* Pure white */
+     /* Dark mode colors */
+     --dark-bg: #1A202C;
+     --dark-primary: #81E6D9;
+     --dark-secondary: #2D3748;
+     --dark-text: #E2E8F0;
+     --dark-text-muted: #A0AEC0;
+     --dark-border: #4A5568;
+     --dark-white: #2D3748;
+ }
+ 
+ /* Dark mode styles */
+ [data-theme="dark"] {
+     --light-bg: var(--dark-bg);
+     --primary: var(--dark-primary);
+     --secondary: var(--dark-secondary);
+     --text-dark: var(--dark-text);
+     --text-muted: var(--dark-text-muted);
+     --border-color: var(--dark-border);
+     --white: var(--dark-white);
+ }
+ 
+ /* Add transition for smooth theme switching */
+ body {
+     transition: background-color 0.3s ease, color 0.3s ease;
+ }
+ /* Theme Toggle Styles (Icon Only) */
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    background: rgba(92, 137, 157, 0.1);
+    transition: all 0.3s ease;
+    margin-left: 1rem;
 }
+
+.theme-toggle:hover {
+    background: rgba(92, 137, 157, 0.2);
+}
+
+.theme-toggle i {
+    font-size: 1.1rem;
+    color: var(--primary);
+}
+
+[data-theme="dark"] .theme-toggle i {
+    color: var(--dark-primary);
+}
+
+[data-theme="dark"] .theme-toggle {
+    background: rgba(129, 230, 217, 0.1);
+}
+
+[data-theme="dark"] .theme-toggle:hover {
+    background: rgba(129, 230, 217, 0.2);
+}
+/* ===== Dark Mode Fixes for Education & Resume Sections ===== */
+[data-theme="dark"] .education {
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
+}
+
+[data-theme="dark"] .timeline-item {
+    color: var(--dark-text);
+}
+
+[data-theme="dark"] .timeline-content {
+    background-color: var(--dark-secondary);
+    color: var(--dark-text);
+    border: 1px solid var(--dark-border);
+}
+
+[data-theme="dark"] .timeline-content h3 {
+    color: var(--dark-primary);
+}
+
+[data-theme="dark"] .timeline-content .institution {
+    color: var(--dark-text-muted);
+}
+
+[data-theme="dark"] .timeline-content .description {
+    color: var(--dark-text);
+}
+
+[data-theme="dark"] .timeline-date {
+    background-color: var(--dark-primary);
+    color: var(--dark-bg);
+    font-weight: 600;
+}
+
+[data-theme="dark"] .resume-download {
+    color: var(--dark-text);
+}
+
+[data-theme="dark"] .resume-download h3 {
+    color: var(--dark-text);
+}
+
+[data-theme="dark"] .download-btn {
+    background-color: var(--dark-primary);
+    color: var(--dark-bg);
+    border: 2px solid var(--dark-primary);
+}
+
+[data-theme="dark"] .download-btn:hover {
+    background-color: transparent;
+    color: var(--dark-primary);
+    border: 2px solid var(--dark-primary);
+}
+
+[data-theme="dark"] .certifications {
+    color: var(--dark-text);
+}
+
+[data-theme="dark"] .certifications p {
+    color: var(--dark-text-muted);
+}
+
+[data-theme="dark"] .badges img {
+    filter: brightness(0.9) contrast(1.1);
+    border: 1px solid var(--dark-border);
+}
+
+[data-theme="dark"] .timeline::before {
+    background: var(--dark-primary);
+}
+
+[data-theme="dark"] .timeline-content::after {
+    background: var(--dark-primary);
+    box-shadow: 0 0 0 3px var(--dark-secondary);
+}
+
+[data-theme="dark"] .section-title::after {
+    background: var(--dark-primary);
+}
+
 
 /* Base Styles */
 * {
@@ -93,6 +231,7 @@ header {
 }
 
 .logo {
+    font-family: 'Saira Stencil One', sans-serif;
     font-size: 28px;
     font-weight: 700;
     color: var(--primary);
@@ -1054,6 +1193,70 @@ footer {
     padding-top: 20px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     opacity: 0.8;
+}
+
+/* Dark mode adjustments */
+[data-theme="dark"] {
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
+}
+
+[data-theme="dark"] header {
+    background-color: rgba(26, 32, 44, 0.95);
+    border-bottom-color: var(--dark-border);
+}
+
+[data-theme="dark"] .hero {
+    background: linear-gradient(135deg, var(--dark-bg) 0%, #2a4365 100%);
+}
+
+[data-theme="dark"] .card,
+[data-theme="dark"] .timeline-content,
+[data-theme="dark"] .contact-form,
+[data-theme="dark"] .project-card {
+    background-color: var(--dark-secondary);
+    border-color: var(--dark-border);
+}
+
+[data-theme="dark"] .skills,
+[data-theme="dark"] .contact,
+[data-theme="dark"] .interests {
+    background-color: var(--dark-bg);
+}
+
+[data-theme="dark"] footer {
+    background-color: var(--dark-secondary);
+    border-top-color: var(--dark-border);
+}
+
+[data-theme="dark"] .progress-bar {
+    background-color: var(--dark-border);
+}
+
+[data-theme="dark"] .form-group input,
+[data-theme="dark"] .form-group textarea {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: var(--dark-border);
+    color: var(--dark-text);
+}
+
+[data-theme="dark"] .form-group label {
+    background-color: var(--dark-bg);
+}
+
+[data-theme="dark"] .footer-links a,
+[data-theme="dark"] .footer-col p {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+[data-theme="dark"] .footer-links a:hover {
+    color: white;
+}
+
+[data-theme="dark"] .footer-col form input {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.2);
+    color: white;
 }
 
 /* Animations */
